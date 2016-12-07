@@ -9,19 +9,15 @@ $(window).scroll(function(){
   $("#counter").text(topNumber);
 
  $("#counter").css({
-
    "color":"white",
    "background-color":"blue",
-   "top":30 + topNumber * 0 +"px"
-
- });
+   "top":30 + topNumber * 0 +"px"});
 
   $("#mountain1").css({"top":topNumber * -1.0 +"px"});
 
   $("#mountain2").css({"top":topNumber * -0.5 +"px"});
 
   $("#mountain3").css({"top":topNumber * 0 +"px"});
-
 
   if ($(this).scrollTop() > 1000) {
           $(".event").css({"opacity": "1"});
@@ -41,6 +37,11 @@ $(window).scroll(function(){
           $(".event2").css({"opacity": "0"});
       }
 
+      if ($(this).scroll() ) {
+              $(".event2").css({"opacity": "1"});
+          } else {
+              $(".event2").css({"opacity": "0"});
+          }
   console.log(topNumber);
 
 });
