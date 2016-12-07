@@ -1,22 +1,620 @@
+
+/* BEGINNING OF BODY PRESETS */
 html, body {
 margin: 0;
 padding: 0;
 }
 
-
-
 #wrapper {
-  height: 10000px;
+  height: 11000px;
   width: 100%;
   overflow: hidden;
   min-width: 800px;
   position: relative;
 }
+/* END OF BODY PRESETS */
 
-#goggles, #mountain1, #mountain2, #mountain3, #snow {
+/* BEGINNING OF COUNTER STYLING */
+#counter {
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  text-align: center;
+  border: 1px solid blue;
+  line-height: 50px;
+  position: fixed;
+  top: 30px;
+  left: 100px;
+  z-index: 10;
+}
+/* END OF COUNTER STYLING */
+
+/* BEGINNING OF GOGGLE STYLING */
+#goggles, #mountain1, #mountain2, #mountain3, #snow, #reflect {
   text-align: center;
   position: absolute;
   top: 0px;
   left: 0px;
+  height:1000px;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 11;
+
+}
+/* END OF GOGGLE STYLING */
+
+/* BEGINNING OF MOUNTAIN STYLING */
+.bg {
+  text-align: center;
+  position: absolute;
+  margin: 0 auto;
+  height: 3000px;
   width: 100%;
 }
+
+#bg1 {
+  top: 1000px;
+  z-index: 1;
+}
+
+#bg2 {
+  top: 2000px;
+  z-index: 2;
+}
+
+#bg3 {
+  top: 3000px;
+  z-index: 3;
+}
+
+#bg4 {
+  top: 4000px;
+  z-index: 4;
+}
+
+#bg5 {
+  top: 5000px;
+  z-index: 5;
+}
+
+#bg6 {
+  top: 6000px;
+  z-index: 6;
+}
+
+#bg7 {
+  top: 7000px;
+  z-index: 7;
+}
+
+#bg8 {
+  top: 8000px;
+  z-index: 8;
+}
+
+#bg9 {
+  top: 9000px;
+  z-index: 9;
+}
+/* END OF MOUNTAIN STYLING */
+
+/* BEGINNING OF TREE STYLING */
+@keyframes treeswing  {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+.trees {
+  animation: treeswing 5s infinite ease-in-out;
+  position: absolute;
+}
+
+#tree1 {
+  width: 200px;
+  height: 400px;
+  left: 200px;
+  top: 5000px;
+  z-index: 4;
+}
+
+#tree2 {
+  width: 300px;
+  height: 600px;
+  left: 10px;
+  top: 5050px;
+  z-index: 4;
+}
+
+#tree3 {
+  width: 250px;
+  height: 500px;
+  left: 300px;
+  top: 5060px;
+  z-index: 4;
+}
+
+#tree4 {
+  width: 400px;
+  height: 800px;
+  left: 150px;
+  top: 5100px;
+  z-index: 4;
+}
+
+#tree5 {
+  width: 250px;
+  height: 500px;
+  right: 20px;
+  top: 8000px;
+  z-index: 9;
+}
+
+#tree6 {
+  width: 250px;
+  height: 500px;
+  right: 100px;
+  top: 8200px;
+  z-index: 9;
+}
+
+#tree7 {
+  width: 350px;
+  height: 700px;
+  right: 120px;
+  top: 8250px;
+  z-index: 9;
+}
+
+#tree8 {
+  width: 300px;
+  height: 600px;
+  right: 70px;
+  top: 8500px;
+  z-index: 9;
+}
+/* END OF TREE STYLING */
+
+/* BEGINNING OF SNOWBOARDER STYLING */
+@keyframes swing {
+  0%, 100% { transform: rotate(-30deg); }
+  25% {transform:scale(1.05);}
+  50% { transform: rotate(30deg); }
+  75% {transform:scale(1.05);}
+}
+
+#snowboarder {
+  animation: swing 2s infinite ease-in-out;
+  z-index: 10;
+  margin-top: 100px;
+  margin-left: -100px;
+  text-align:center;
+  z-index: 10;
+  position: fixed;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+}
+/* END OF SNOWBOARDER STYLING */
+
+/* BEGINNING OF LIFT STYLING */
+.lifts {
+  height: 1000px;
+  width: 1000px;
+  z-index: 50;
+  position: absolute;
+}
+
+@keyframes liftie1 {
+
+    from {transform:
+      translateX(0)
+      translateY(7000px)
+      rotate(0)
+    }
+
+  to {transform:
+    translateX(1000px)
+    translateY(6000px)
+    rotate(0)}
+}
+
+#lift1 {
+  animation: liftie1 5s infinite normal;
+}
+
+@keyframes liftie2 {
+
+    from {transform:
+      translateX(-500px)
+      translateY(7500px)
+      rotate(0)
+    }
+
+  to {transform:
+    translateX(500px)
+    translateY(6500px)
+    rotate(0)}
+}
+
+#lift2 {
+  animation: liftie2 5s infinite normal;
+}
+@keyframes liftie3 {
+
+    from {transform:
+      translateX(500px)
+      translateY(6500px)
+      rotate(0)
+    }
+
+  to {transform:
+    translateX(1500px)
+    translateY(5500px)
+    rotate(0)}
+}
+
+#lift3 {
+  animation: liftie3 5s infinite normal;
+}
+
+@keyframes liftie4 {
+
+    from {transform:
+      translateX(1000px)
+      translateY(6000px)
+      rotate(0)
+    }
+
+  to {transform:
+    translateX(2000px)
+    translateY(5000px)
+    rotate(0)}
+}
+
+#lift4 {
+  animation: liftie4 5s infinite normal;
+}
+
+@keyframes liftie5 {
+
+    from {transform:
+      translateX(-1000px)
+      translateY(8000px)
+      rotate(0)
+    }
+
+  to {transform:
+    translateX(0)
+    translateY(7000px)
+    rotate(0)}
+}
+
+#lift5 {
+  animation: liftie5 5s infinite normal;
+}
+
+@keyframes liftie6 {
+
+    from {transform:
+      translateX(-1500px)
+      translateY(8500px)
+      rotate(0)
+    }
+
+  to {transform:
+    translateX(-500px)
+    translateY(7500px)
+    rotate(0)}
+}
+
+#lift6 {
+  animation: liftie6 5s infinite normal;
+}
+
+@keyframes liftie7 {
+
+    from {transform:
+      translateX(1000px)
+      translateY(5500px)
+      rotate(0)
+    }
+
+  to {transform:
+    translateX(0)
+    translateY(6500px)
+    rotate(0)}
+}
+
+#lift7 {
+  animation: liftie7 5s infinite normal;
+}
+
+@keyframes liftie8 {
+
+    from {transform:
+      translateX(500px)
+      translateY(6000px)
+      rotate(0)
+    }
+
+  to {transform:
+    translateX(-500px)
+    translateY(7000px)
+    rotate(0)}
+}
+
+#lift8 {
+  animation: liftie8 5s infinite normal;
+}
+@keyframes liftie9 {
+
+    from {transform:
+      translateX(1500px)
+      translateY(5000px)
+      rotate(0)
+    }
+
+  to {transform:
+    translateX(500px)
+    translateY(6000px)
+    rotate(0)}
+}
+
+#lift9 {
+  animation: liftie9 5s infinite normal;
+}
+
+@keyframes liftie10 {
+
+    from {transform:
+      translateX(2000px)
+      translateY(4500px)
+      rotate(0)
+    }
+
+  to {transform:
+    translateX(1000px)
+    translateY(5500px)
+    rotate(0)}
+}
+
+#lift10 {
+  animation: liftie10 5s infinite normal;
+}
+
+@keyframes liftie11 {
+
+    from {transform:
+      translateX(0)
+      translateY(6500px)
+      rotate(0)
+    }
+
+  to {transform:
+    translateX(-1000px)
+    translateY(7500px)
+    rotate(0)}
+}
+
+#lift11 {
+  animation: liftie11 5s infinite normal;
+}
+
+@keyframes liftie12 {
+
+    from {transform:
+      translateX(0)
+      translateY(6500px)
+      rotate(0)
+    }
+
+  to {transform:
+    translateX(-1000px)
+    translateY(7500px)
+    rotate(0)}
+}
+
+#lift12 {
+  animation: liftie12 5s infinite normal;
+}
+
+/* END OF LIFT STYLING */
+
+/* BEGINNING OF CLOUD STYLING */
+#cloud1 {
+    width: 800px;
+    height: 400px;
+    top: 900px;
+    z-index: 100;
+    opacity: .6;
+    position: absolute;;
+    -webkit-animation: mymove1 50s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove1 50s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove1 {
+    0%   {left: -200px;}
+    100% {left: 2000px;}
+}
+
+/* Standard syntax */
+@keyframes mymove1 {
+    0%   {left: -200px;}
+    100% {left: 2000px;}
+}
+
+#cloud2 {
+    width: 700px;
+    height: 350px;
+    top: 1200px;
+    z-index: 100;
+    opacity: .6;
+    position: absolute;;
+    -webkit-animation: mymove2 75s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove2 75s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove2 {
+    0%   {left: 0;}
+    100% {left: 2000px;}
+}
+
+/* Standard syntax */
+@keyframes mymove2 {
+    0%   {left: 0;}
+    100% {left: 2000px;}
+}
+
+
+#cloud3 {
+    width: 500px;
+    height: 250px;
+    top: 1100px;
+    z-index: 100;
+    opacity: .6;
+    position: absolute;
+    -webkit-animation: mymove3 20s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove3 20s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove3 {
+    0%   {left: -100px;}
+    100% {left: 2000px;}
+}
+
+/* Standard syntax */
+@keyframes mymove3 {
+    0%   {left: -100px;}
+    100% {left: 2000px;}
+}
+
+#cloud4 {
+    width: 600px;
+    height: 300px;
+    top: 5000px;
+    z-index: 100;
+    opacity: .6;
+    position: absolute;;
+    -webkit-animation: mymove1 30s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove1 30s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove1 {
+    0%   {left: -400px;}
+    100% {left: 2000px;}
+}
+
+/* Standard syntax */
+@keyframes mymove1 {
+    0%   {left: -400px;}
+    100% {left: 2000px;}
+}
+
+#cloud5 {
+    width: 700px;
+    height: 350px;
+    top: 5250px;
+    z-index: 100;
+    opacity: .6;
+    position: absolute;;
+    -webkit-animation: mymove2 45s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove2 45s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove2 {
+    0%   {left: -200px;}
+    100% {left: 2000px;}
+}
+
+/* Standard syntax */
+@keyframes mymove2 {
+    0%   {left: -200px;}
+    100% {left: 2000px;}
+}
+
+#cloud6 {
+    width: 800px;
+    height: 400px;
+    top: 6000px;
+    z-index: 100;
+    opacity: .6;
+    position: absolute;
+    -webkit-animation: mymove3 30s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove3 30s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove3 {
+    0%   {left: -600px;}
+    100% {left: 2000px;}
+}
+
+/* Standard syntax */
+@keyframes mymove3 {
+    0%   {left: -600px;}
+    100% {left: 2000px;}
+}
+/* END OF CLOUD STYLING */
+
+/* BEGINNING OF SNOW STYLING */
+#snow{
+
+	background-image: url('../images/snow-1.png'), url('../images/snow-2.png'), url('../images/snow-3.png');
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:100;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+/* END OF SNOW STYLING */
+
+/* BEGINNING OF TITLE STYLING */
+@keyframes adventure {
+  0%, 100% { transform: rotate(-30deg); }
+  25% {transform:scale(1.5);}
+  50% { transform: rotate(30deg); }
+  75% {transform:scale(1.5);}
+}
+
+#title {
+  animation: adventure 3s infinite ease-in-out;
+  z-index: 15;
+  margin-left: -300px;
+  text-align: center;
+  position: absolute;
+  top: 10500px;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+}
+/* END OF SNOWBOARDER STYLING */
