@@ -461,17 +461,9 @@ padding: 0;
     z-index: 100;
     opacity: .6;
     position: absolute;;
-    -webkit-animation: mymove1 50s infinite; /* Safari 4.0 - 8.0 */
     animation: mymove1 50s infinite;
 }
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove1 {
-    0%   {left: -200px;}
-    100% {left: 2000px;}
-}
-
-/* Standard syntax */
 @keyframes mymove1 {
     0%   {left: -200px;}
     100% {left: 2000px;}
@@ -484,17 +476,9 @@ padding: 0;
     z-index: 100;
     opacity: .6;
     position: absolute;;
-    -webkit-animation: mymove2 75s infinite; /* Safari 4.0 - 8.0 */
     animation: mymove2 75s infinite;
 }
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove2 {
-    0%   {left: 0;}
-    100% {left: 2000px;}
-}
-
-/* Standard syntax */
 @keyframes mymove2 {
     0%   {left: 0;}
     100% {left: 2000px;}
@@ -508,17 +492,9 @@ padding: 0;
     z-index: 100;
     opacity: .6;
     position: absolute;
-    -webkit-animation: mymove3 20s infinite; /* Safari 4.0 - 8.0 */
     animation: mymove3 20s infinite;
 }
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove3 {
-    0%   {left: -100px;}
-    100% {left: 2000px;}
-}
-
-/* Standard syntax */
 @keyframes mymove3 {
     0%   {left: -100px;}
     100% {left: 2000px;}
@@ -531,17 +507,9 @@ padding: 0;
     z-index: 100;
     opacity: .6;
     position: absolute;;
-    -webkit-animation: mymove4 30s infinite; /* Safari 4.0 - 8.0 */
     animation: mymove4 30s infinite;
 }
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove4 {
-    0%   {left: -400px;}
-    100% {left: 2000px;}
-}
-
-/* Standard syntax */
 @keyframes mymove4 {
     0%   {left: -400px;}
     100% {left: 2000px;}
@@ -554,17 +522,9 @@ padding: 0;
     z-index: 100;
     opacity: .6;
     position: absolute;;
-    -webkit-animation: mymove5 45s infinite; /* Safari 4.0 - 8.0 */
     animation: mymove5 45s infinite;
 }
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove5 {
-    0%   {left: -200px;}
-    100% {left: 2000px;}
-}
-
-/* Standard syntax */
 @keyframes mymove5 {
     0%   {left: -200px;}
     100% {left: 2000px;}
@@ -577,17 +537,9 @@ padding: 0;
     z-index: 100;
     opacity: .6;
     position: absolute;
-    -webkit-animation: mymove6 30s infinite; /* Safari 4.0 - 8.0 */
     animation: mymove6 30s infinite;
 }
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove6 {
-    0%   {left: -600px;}
-    100% {left: 2000px;}
-}
-
-/* Standard syntax */
 @keyframes mymove6 {
     0%   {left: -600px;}
     100% {left: 2000px;}
@@ -600,17 +552,9 @@ padding: 0;
     z-index: 100;
     opacity: .6;
     position: absolute;;
-    -webkit-animation: mymove7 20s infinite; /* Safari 4.0 - 8.0 */
     animation: mymove7 20s infinite;
 }
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove7 {
-    0%   {left: -400px;}
-    100% {left: 2000px;}
-}
-
-/* Standard syntax */
 @keyframes mymove7 {
     0%   {left: -400px;}
     100% {left: 2000px;}
@@ -623,17 +567,9 @@ padding: 0;
     z-index: 100;
     opacity: .6;
     position: absolute;;
-    -webkit-animation: mymove8 25s infinite; /* Safari 4.0 - 8.0 */
     animation: mymove8 25s infinite;
 }
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove8 {
-    0%   {left: -1000px;}
-    100% {left: 2000px;}
-}
-
-/* Standard syntax */
 @keyframes mymove8 {
     0%   {left: -1000px;}
     100% {left: 2000px;}
@@ -646,17 +582,9 @@ padding: 0;
     z-index: 100;
     opacity: .6;
     position: absolute;
-    -webkit-animation: mymove9 40s infinite; /* Safari 4.0 - 8.0 */
     animation: mymove9 40s infinite;
 }
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove9 {
-    0%   {left: -1000px;}
-    100% {left: 2000px;}
-}
-
-/* Standard syntax */
 @keyframes mymove9 {
     0%   {left: -1000px;}
     100% {left: 2000px;}
@@ -665,7 +593,6 @@ padding: 0;
 
 /* BEGINNING OF SNOW STYLING */
 #snow{
-
 	background-image: url('../images/snow-1.png'), url('../images/snow-2.png'), url('../images/snow-3.png');
 	height: 100%;
 	left: 0;
